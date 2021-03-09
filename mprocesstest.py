@@ -3,10 +3,10 @@ from multiprocessing import Pool
 import matplotlib
 
 def run(infile):
-    import eSims
+    import mospy
     print("Starting {} ".format(infile))
     start=time.perf_counter()
-    eSims.doSim(infile)
+    mospy.doSim(infile)
     end=time.perf_counter()
     elapsed=end-start
     print("xxx elapsed time for {} = {} seconds".format(infile,elapsed))
