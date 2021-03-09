@@ -1,5 +1,5 @@
 import time
-import eSims
+import mospy
 import sys
 
 # Initialize variable
@@ -17,7 +17,7 @@ if len(sys.argv)>1:
    for inputfile in inputlist:
       inputfile=inputfile.replace('.py','')
       start= time.perf_counter()
-      eSims.doSim(inputfile)
+      mospy.doSim(inputfile)
       end=time.perf_counter()
       elapsed=end-start
       print("elapsed time= {:.12f} seconds".format(elapsed))
