@@ -9,7 +9,7 @@ def runSim(posInit, velInit,
                a, P, e, inc, Omega, omega,
                pomega, f, M, l, theta, T, infile,inputVals):
     # Print out what package we are using
-    print("Using package: eSims") # WAS 'MSims' until 4 OCT 2019
+    print("Using package: mospy") # WAS 'MSims' until 4 OCT 2019
 
     # Import functions/packages we need
     import math
