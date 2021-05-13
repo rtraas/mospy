@@ -6,6 +6,7 @@ def integrate(sim, astroInputs, rebInputs, simResults, energy, plotTypes):
     import math
     from .Energy import Energy
     from .rotTransform import rotTransform
+    from .archive import Archive
 
     # Assign the sim particles to variable p.
     p = sim.particles
@@ -32,6 +33,9 @@ def integrate(sim, astroInputs, rebInputs, simResults, energy, plotTypes):
     # Creates a loop that iterates Noutputs + 1's amount for integrating.
     print('last input time : ',times[-1])
     sim.status()
+    
+    arxiv = Archive()
+    
     for i,time in enumerate(times):
 
         #if (True): # Uncomment to remove crash detection
